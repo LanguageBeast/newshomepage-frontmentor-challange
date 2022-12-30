@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body-element">
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-icon-svg">
+          <img
+            src="./assets/images/logo.svg"
+            alt="icon"
+            class="header-logo"
+            id="header-logo"
+          />
+        </div>
+        <div class="header-menu-logo" id="mb-logo">
+          <img
+            class="menu-open hide"
+            src="./assets/images/icon-menu.svg"
+            alt="menu"
+            id="mb-menu-open"
+          />
+        </div>
+        <div class="header-nav-links" id="nav-links-desktop">
+          <ul class="header-links">
+            <li class="header-link">Home</li>
+            <li class="header-link">New</li>
+            <li class="header-link">Popular</li>
+            <li class="header-link">Trending</li>
+            <li class="header-link">Categories</li>
+          </ul>
+        </div>
+        <div class="hide" id="mb-links-container">
+          <div class="header-nav-links-mb" id="nav-links-mobile">
+            <img
+              class="menu-close"
+              id="mb-menu-close"
+              src="./assets/images/icon-menu-close.svg"
+              alt="menu close"
+              width="31"
+              height="31"
+            />
+            <div class="mb-links-container" id="mb-container">
+              <ul class="header-links-mb">
+                <li class="header-link-mb">Home</li>
+                <li class="header-link-mb">New</li>
+                <li class="header-link-mb">Popular</li>
+                <li class="header-link-mb">Trending</li>
+                <li class="header-link-mb">Categories</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="front-news">
+        <div class="wrapper">
+          <div class="front-news-grid">
+            <div class="front-news-main-img">
+              <img
+                src="./assets/images/image-web-3-desktop.jpg"
+                id="front-img"
+                alt=""
+              />
+            </div>
+            <div class="front-news-title">
+              <h1>The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="front-news-info">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button class="info-button">READ MORE</button>
+            </div>
+            <div class="front-news-triplet">
+              <h2 class="triplet-main-title">New</h2>
+              <div class="triplet-item">
+                <h3 class="triplet-item-title">Hydrogen VS Electric Cars</h3>
+                <p class="triplet-item-info">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </div>
+              <div class="triplet-item">
+                <h3 class="triplet-item-title">The Downsides of AI Artistry</h3>
+                <p class="triplet-item-info">
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </div>
+              <div class="triplet-item">
+                <h3 class="triplet-item-title">Is VC Funding Drying Up?</h3>
+                <p class="triplet-item-info">
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay hide" id="body-mimic"></div>
+      </section>
+      <section class="side-articles">
+        <div class="wrapper">
+          <div class="articles-container">
+            <div class="article">
+              <div class="article-img">
+                <img
+                  src="./assets/images/image-retro-pcs.jpg"
+                  alt="retro pcs"
+                  width="100"
+                  height="127"
+                />
+              </div>
+              <div class="article-info">
+                <h3 class="article-info-title">01</h3>
+                <h4 class="article-info-subtitle">Reviving Retro PCs</h4>
+                <p class="article-info-text">
+                  What happens when old PCs are given modern upgrades?
+                </p>
+              </div>
+            </div>
+            <div class="article">
+              <div class="article-img">
+                <img
+                  src="./assets/images/image-top-laptops.jpg"
+                  alt="top laptops"
+                  width="100"
+                  height="127"
+                />
+              </div>
+              <div class="article-info">
+                <h3 class="article-info-title">02</h3>
+                <h4 class="article-info-subtitle">Top 10 Laptops of 2022</h4>
+                <p class="article-info-text">
+                  Our best picks for various needs and budgets.
+                </p>
+              </div>
+            </div>
+            <div class="article">
+              <div class="article-img">
+                <img
+                  src="./assets/images/image-gaming-growth.jpg"
+                  alt="gaming growth"
+                  width="100"
+                  height="127"
+                />
+              </div>
+              <div class="article-info">
+                <h3 class="article-info-title">03</h3>
+                <h4 class="article-info-subtitle">The Growth of Gaming</h4>
+                <p class="article-info-text">
+                  How the pandemic has sparked fresh opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
+<!-- <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by <a href="#">Martin Herrera</a>.
+  </div> -->
