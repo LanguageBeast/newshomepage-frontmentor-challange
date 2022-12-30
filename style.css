@@ -57,6 +57,9 @@ body {
 }
 
 /* HEADER */
+.links-container {
+  display: flex;
+}
 .header-links {
   display: flex;
   justify-content: end;
